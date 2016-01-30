@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="node_modules/es6-shim/es6-shim.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="angular_1_router_old_fixed.js"></script>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script>
+        System.config({
+            baseURL: '',
+            defaultJSExtensions: true,
+            transpiler: 'typescript',
+            typescriptOptions: {
+            },
+            map: {
+                'typescript': 'node_modules/typescript/lib/typescript.js',
+                'angular': 'node_modules/angular/angular.js',
+            },
+            meta: {
+                '*.ts': {
+                    format: 'es6'
+                }
+            },
+            packages: {
+                "lib": {
+                    "defaultExtension": "ts"
+                }
+            }
+        });
+
+        System.import('lib/index');
+    </script>
+</head>
+<body>
+    <blog></blog>
+</body>
+</html>

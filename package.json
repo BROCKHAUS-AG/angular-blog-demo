@@ -1,0 +1,19 @@
+{
+  "name": "angular-demo-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server ."
+  },
+  "keywords": [],
+  "author": "Fabian Raetz",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "1.5.0-rc.2",
+    "es6-shim": "^0.34.2",
+    "live-server": "^0.9.1",
+    "systemjs": "^0.19.17",
+    "typescript": "^1.7.5"
+  }
+}

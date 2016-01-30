@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "systemjs",
+    "target": "es6",
+    "sourceMap": true,
+    "noEmit": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
