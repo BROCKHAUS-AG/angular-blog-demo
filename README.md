@@ -11,5 +11,5 @@ npm start
 ```
 
 ## Links
-[Understanding Components](https://docs.angularjs.org/guide/component)
-[JSONPlaceholder - Fake Online REST API for Testing and Prototyping](http://jsonplaceholder.typicode.com/)
+- [Understanding Components](https://docs.angularjs.org/guide/component)
+- [JSONPlaceholder - Fake Online REST API for Testing and Prototyping](http://jsonplaceholder.typicode.com/)
