@@ -11,13 +11,14 @@ export interface PostDetailsComponentInstruction extends ComponentInstruction {
 export class PostDetailsCtrl implements OnActivate{
     post: any;
 
-    constructor(private $http: IHttpService) {
+    constructor(private $http: IHttpService, private $q: IQService) {
     }
 
     $routerOnActivate(next: PostDetailsComponentInstruction ) {
         return this.$http.get(`http://jsonplaceholder.typicode.com/posts/${next.params.id}`).then(res => {
             this.post = res.data;
         });
+	//return this.$q.reject();
     }
 }
 
